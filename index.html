@@ -73,18 +73,10 @@
               typing.remove()
               setTimeout(() => {
                 let ct = document.getElementById("container")
-                let a = document.createElement("a")
-                a.href = "#"
-                a.classList.add("fa-facebook")
-                a.classList.add("fa")
-                a.id = "facebook"
-                a.style.justifyContent = "center"
-                a.style.alignItems = "center"
-                a.style.textAlign = "center"
                 let d = document.createElement("span")
                 d.classList.add("t")
                 d.id = "t"
-                d.innerText = "สวัสดีครับผมพู่กัน ห้อง 203\nPhone: 0886844934\nDiscord: KisuX3\nMinecraft Xbox: Pukan221op\nGithub: PUKAN223\n\nMy Programming Langguage: \n -Node Js \n -Typescript \n -C++(Arduino)"
+                d.innerText = "Phone: 0886844934\nDiscord: KisuX3\nMinecraft Xbox: Pukan221op\nGithub: PUKAN223\n\nMy Programming Langguage: \n -Node Js \n -Typescript \n -C++(Arduino)"
                 d.style.justifyContent = "center"
                 d.style.alignItems = "center"
                 d.style.textAlign = "center"
@@ -97,7 +89,7 @@
                 ct.style.justifyContent = "center"
                 ct.style.alignItems = "center"
                 ct.style.textAlign = "center"
-                ct.append(a, br, br1, d)
+                ct.append(br, br1, d)
               })
             }, 2000)
           }, 7000)
