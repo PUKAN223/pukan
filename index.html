@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduce</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.cdnfonts.com/css/pixies" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-color: #0d1117;">
+  <div style="z-index: 100;">
+    <h1>11</h1>
+    <div id="ba" class="ba">
+
+    </div>
+  </div>
+  <div class="center">
+    <div class="container" id="container">
+      <img src="./images/icon.png" alt="" width="400px" height="400px" class="icon" id="icon" />
+      <div class="typing" id="typing">
+        <br>
+        <span id="t" style="text-align: center;">Hello, My Name is Pukan</span>
+      </div>
+      <br>
+      <br>
+      <div class="box" id="box" style="text-align: center; justify-content: center; align-items: center;">
+      </div>
+      <div class="loader" id="loader"></div>
+    </div>
+  </div>
+  <script>
+    const fb = document.getElementById("facebook")
+    setTimeout(() => {
+      const text = document.getElementById("t")
+      const icon = document.getElementById("icon")
+      const box = document.getElementById("box")
+      const loader = document.getElementById("loader")
+      const typing = document.getElementById("typing")
+
+      setTimeout(() => {
+        icon.remove()
+        text.style.animation = 'fadeOut 5s, typing 4s steps(var(--steps)) forwards'
+        text.innerText = "I Like to Play Minecraft."
+        setTimeout(() => {
+          text.style.animation = "fadeIn 4s"
+          text.innerText = "My Best Programming Language."
+          let content = document.createElement("img")
+          content.classList.add("content")
+          content.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png"
+          content.style.width = "200px"
+          content.style.height = "200px"
+          content.style.justifyContent = "center"
+          content.style.alignItems = "center"
+          content.style.textAlign = "center"
+          content.style.animation = "fadeOut 2s"
+          box.append(content)
+          setTimeout(() => {
+            text.style.transition = "0.5s"
+            content.style.transition = "0.5s"
+            loader.style.transition = "0.5s"
+            typing.style.transition = "0.5s"
+            text.style.opacity = 0
+            content.style.opacity = 0
+            loader.style.opacity = 0
+            typing.style.opacity = 0
+            setTimeout(() => {
+              text.remove()
+              content.remove()
+              loader.remove()
+              typing.remove()
+              setTimeout(() => {
+                let ct = document.getElementById("container")
+                let a = document.createElement("a")
+                a.href = "#"
+                a.classList.add("fa-facebook")
+                a.classList.add("fa")
+                a.id = "facebook"
+                a.style.justifyContent = "center"
+                a.style.alignItems = "center"
+                a.style.textAlign = "center"
+                let d = document.createElement("span")
+                d.classList.add("t")
+                d.id = "t"
+                d.innerText = "Phone: 0886844934\nDiscord: KisuX3\nMinecraft Xbox: Pukan221op\nGithub: PUKAN223"
+                d.style.justifyContent = "center"
+                d.style.alignItems = "center"
+                d.style.textAlign = "center"
+                d.style.fontFamily = "'Pixies', sans-serif"
+                d.style.color = "#ffff"
+                d.style.fontSize = "20px"
+                let br = document.createElement("br")
+                let br1 = document.createElement("br")
+                ct.style.height = "200px"
+                ct.style.justifyContent = "center"
+                ct.style.alignItems = "center"
+                ct.style.textAlign = "center"
+                ct.append(a, br, br1, d)
+              })
+            }, 2000)
+          }, 7000)
+        }, 7000)
+      }, 3000)
+      console.log("hi")
+    }, 6000)
+    const bgAnimation = document.getElementById("ba")
+    const colorBox = 200;
+
+    for (let i = 0; i < colorBox; i++) {
+      console.log(i)
+      const cBox = document.createElement("div")
+      cBox.classList.add("colorbox")
+      bgAnimation.append(cBox)
+    }
+  </script>
+</body>
+
+</html>
