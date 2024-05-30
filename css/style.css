@@ -1,3 +1,15 @@
+#t1 {
+  font-family: 'Pixies', sans-serif;
+  font-size: 35px;
+  color: #ffff;
+  position: relative;
+}
+#t2 {
+  font-family: 'Pixies', sans-serif;
+  font-size: 35px;
+  color: #ffff;
+  position: relative;
+}
 .loader {
   opacity: 1;
   height: 10px;
