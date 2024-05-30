@@ -22,7 +22,11 @@
       <img src="./images/icon.png" alt="" width="400px" height="400px" class="icon" id="icon" />
       <div class="typing" id="typing">
         <br>
-        <span id="t" style="text-align: center;">Hello, My Name is Pukan</span>
+        <span id="t2" style="text-align: center;">Hello, My Name is Pukan</span>
+        <br>
+        <span id="t1" style="text-align: center;">M.203 No.2</span>
+        <br>
+        <span id="t" style="text-align: center;">I like Coding.</span>
       </div>
       <br>
       <br>
@@ -34,7 +38,11 @@
   <script>
     const fb = document.getElementById("facebook")
     const t = document.getElementById("t")
-    t.innerText = "Hello, My name is Pukan\nM.203/2\nI Like Coding"
+    const t1 = document.getElementById("t1")
+    const t2 = document.getElementById("t2")
+    t1.style.animation = "fadeOut 2s"
+    t2.style.animation = "fadeout 2s"
+
     setTimeout(() => {
       const text = document.getElementById("t")
       const icon = document.getElementById("icon")
