@@ -20,12 +20,9 @@
   <div class="center">
     <div class="container" id="container">
       <img src="./images/icon.png" alt="" width="400px" height="400px" class="icon" id="icon" />
-      <div class="typing" id="typing">
-        <br>
-        <span id="t2" style="text-align: center;">Hello, My Name is Pukan</span>
-        <br>
+      <span id="t2" style="text-align: center;">Hello, My Name is Pukan</span>
         <span id="t1" style="text-align: center;">M.203 No.2</span>
-        <br>
+      <div class="typing" id="typing">
         <span id="t" style="text-align: center;">I like Coding.</span>
       </div>
       <br>
@@ -40,8 +37,8 @@
     const t = document.getElementById("t")
     const t1 = document.getElementById("t1")
     const t2 = document.getElementById("t2")
-    t1.style.animation = "fadeOut 2s"
-    t2.style.animation = "fadeout 2s"
+    t1.style.animation = "fadeOut 2s, up 2s"
+    t2.style.animation = "fadeout 2s, up 2s"
 
     setTimeout(() => {
       const text = document.getElementById("t")
