@@ -49,6 +49,8 @@
       const typing = document.getElementById("typing")
 
       setTimeout(() => {
+        t1.remove()
+        t2.remove()
         icon.remove()
         text.style.animation = 'fadeOut 5s, typing 4s steps(var(--steps)) forwards'
         text.innerText = "I Like to Play Minecraft."
