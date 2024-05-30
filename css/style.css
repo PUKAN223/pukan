@@ -387,6 +387,10 @@
   --background: #1d1f20;
 }
 
+* {
+  user-select: none;
+}
+
 .body {
   margin-top: 10px;
 }
